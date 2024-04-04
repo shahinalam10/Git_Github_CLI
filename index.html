@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & Github</title>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.jpg">
+    <!--style css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="assets/booststrap file/css/bootstrap.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-color">
+    <div class="container-fluid">
+        <!--nav section start-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.jpeg" class="img-fluid rounded" alt="logo" style="height: 55px; width: 200px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav-effect" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 item-hover">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="working-directory.html">Working directory</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="stagin-area.html">Staging area</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="local-repository.html">Local repository</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="remote-repository.html">Remote repository</a>
+                  </li>
+                </ul>
+                <div class="search-container">
+                  <form action="#" method="get">
+                    <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                    <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!--nav section end-->
+        
+        <!--body section start-->
+        <div class="body-section p-4 mt-4 card-content">
+         <div class="head-title">
+            <p>Learn Git and Github an interactive way</p>
+         </div>
+
+         <!--question session start-->
+         <div class="row">
+          <div class="col question-session">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <p class="m-0 p-0"><i class="fa-solid fa-1"></i>. What is Git?</p>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body m-1">
+                    <p><i class="fa-solid fa-angles-right" style="color: #f03c2d;"></i> Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development. Git's goals include speed, data integrity, and support for distributed, non-linear workflows.<br>Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.</p>
+                    <h5>It is used for:</h5>
+                    <dl>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Tracking code changes</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Tracking who made changes</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Coding collaboration</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <p class="m-0 p-0"><i class="fa-solid fa-2"></i>. What does git do? </p>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body m-1">
+                    <p><i class="fa-solid fa-angles-right" style="color: #f03c2d;"></i> One of the biggest advantages of Git is its branching capabilities. Unlike centralized version control systems, Git branches are cheap and easy to merge. This facilitates the feature branch workflow popular with many Git users. Feature branches provide an isolated environment for every change to your codebase.</p>
+                    <dl>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Manage projects with Repositories</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Clone a project to work on a local copy</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Control and track changes with Staging and Committing</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Branch and Merge to allow for work on different parts and versions of a project</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Pull the latest version of the project to a local copy</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Push local updates to the main project</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <p class="m-0 p-0"><i class="fa-solid fa-3"></i>. Working with git?</p>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body m-1">
+                    <dl>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Initialize Git on a folder, making it a Repository</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Git now creates a hidden folder to keep track of changes in that folder</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> When a file is changed, added or deleted, it is considered modified</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> You select the modified files you want to Stage</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> The Staged files are Committed, which prompts Git to store a permanent snapshot of the files</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Git allows you to see the full history of every commit.</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> You can revert back to any previous commit.</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Git does not store a separate copy of every file in every commit, but keeps track of changes made in each commit!</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <p class="m-0 p-0"><i class="fa-solid fa-4"></i>. Why use Git?</p>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body m-1">
+                    <p><i class="fa-solid fa-angles-right" style="color: #f03c2d;"></i> One of the biggest advantages of Git is its branching capabilities. Unlike centralized version control systems, Git branches are cheap and easy to merge. This facilitates the feature branch workflow popular with many Git users. Feature branches provide an isolated environment for every change to your codebase.</p>
+                    <dl>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Over 70% of developers use Git!</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Developers can work together from anywhere in the world.</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Developers can see the full history of the project.</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Developers can revert to earlier versions of a project..</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                    <p class="m-0 p-0"><i class="fa-solid fa-5"></i></i>. What is Github?</p>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body m-1">
+                    <p><i class="fa-solid fa-angles-right" style="color: #f03c2d;"></i> GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.</p>
+                    <dl>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Git is not the same as GitHub.</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> GitHub makes tools that use Git.</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018.</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> In this tutorial, we will focus on using Git with GitHub.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFour">
+                    <p class="m-0 p-0"><i class="fa-solid fa-6"></i>. How use Github?</p>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body m-1">
+                    <p><i class="fa-solid fa-angles-right" style="color: #f03c2d;"></i> GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.</p>
+                    <dl>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Go to <a style="color: #f03c2d;" target="_blank" href="https://github.com/">GitHub</a> and sign up for an account:</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> Create a Repository on GitHub</dd>
+                      <dd><i class="fa-regular fa-hand-point-right"></i> More details check <a style="color: #f03c2d;" target="_blank" href="https://www.freecodecamp.org/news/introduction-to-git-and-github/">About GitHub</a></dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div><br><br><hr style="color: bisque;">
+          </div>
+         </div>
+         <!--question session end-->
+
+         <div class="head-title mt-4">
+          <p>Git and Git Command</p>
+          </div>
+          <div id="list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 transition-delay">
+            <div class="col">
+              <div class="card col-padding fade-right-1">              
+                <div class="card-body">
+                  <h5 class="card-title"><code>mkdir folderName</code></h5>
+                  <p class="ex-content">Ex: mkdir myFolder</p>
+                  <p class="card-text">This command is used for making a new folder</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-2">              
+                <div class="card-body">
+                  <h5 class="card-title"><code>cd folderName</code></h5>
+                  <p class="ex-content">Ex: cd myFolder</p>
+                  <p class="card-text">This command is used changing directory</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-3">               
+                <div class="card-body" >
+                  <h5 class="card-title"><code>ls -a</code></h5>
+                  <p class="ex-content">Ex: just type ls -a</p>
+                  <p class="card-text">This command is all file/folder include hidden</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-4">              
+                <div class="card-body">
+                  <h5 class="card-title"><code>touch filename.exte</code></h5>
+                  <p class="ex-content">Ex: touch index.php</p>
+                  <p class="card-text">This command is used to a file create from project folder</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-5">              
+                <div class="card-body">
+                  <h5 class="card-title"><code>git --version</code></h5>
+                  <p class="ex-content">Ex: git --version </p>
+                  <p class="card-text">This command is used to check the git version</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-6">              
+                <div class="card-body">
+                  <h5 class="card-title"><code>git tag</code></h5>
+                  <p class="ex-content">Ex: git tag v1.4</p>
+                  <p class="card-text">This command marks a significant change-set, such as a release</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-7">             
+                <div class="card-body">
+                  <h5 class="card-title"><code>git config --global user.name</code></h5>
+                  <p class="ex-content">Ex: git config --global user.name 'Shahin Alam'</p>
+                  <p class="card-text">This command is used define the username of the git user globally</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-8">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git config --global user.email</code></h5>
+                  <p class="ex-content">Ex: git config --global user.email 'shahin@email.com'</p>
+                  <p class="card-text">This command is used define the email of the git user globally</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-9">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git init</code></h5>
+                  <p class="ex-content">Ex: git init</p>
+                  <p class="card-text">The git init command creates a new Git repository. It can be used to convert an existing,project to a Git initialize</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-10">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git add .</code></h5>
+                  <p class="ex-content">Ex: git add .</p>
+                  <p class="card-text">This command is used to add all files to staging(index)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-11">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git add filename.exte</code></h5>
+                  <p class="ex-content">Ex: git add index.php</p>
+                  <p class="card-text">This command is used to add a only one file to the staging area</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-12">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git add --a</code></h5>
+                  <p class="ex-content">Ex: git add --a</p>
+                  <p class="card-text">Add all new and changed files to the staging area.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-13">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git status</code></h5>
+                  <p class="ex-content">Ex: git status</p>
+                  <p class="card-text">This command is used to check status for track and untrack file</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-14">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git commit -m 'message'</code></h5>
+                  <p class="ex-content">Ex: git commit -m 'update version'</p>
+                  <p class="card-text">Commit changes to you repository with a message.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-15">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git push origin</code></h5>
+                  <p class="ex-content">Ex: git push origin branch name</p>
+                  <p class="card-text">To push a specific branch from github repository.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-16">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git remote add origin url</code></h5>
+                  <p class="ex-content">Ex: git remote add origin url</p>
+                  <p class="card-text">This command is used to add a remote repository.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-17">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git push</code></h5>
+                  <p class="ex-content">Ex: git push</p>
+                  <p class="card-text">This command is used to Push changes to remote repository</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-18">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git clone</code></h5>
+                  <p class="ex-content">Ex: git clone repo_url</p>
+                  <p class="card-text">This command is used to Clone public repository.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-19">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git clone</code></h5>
+                  <p class="ex-content">Ex: git clone url</p>
+                  <p class="card-text">This command is used to Clone private repository.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-20">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git rm -r</code></h5>
+                  <p class="ex-content">Ex: git rm -r filename.exte</p>
+                  <p class="card-text">This command is used to remove a file (or folder)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-21">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git branch</code></h5>
+                  <p class="ex-content">Ex: git branch [branch name]</p>
+                  <p class="card-text">This command is used to create a new branch</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-22">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git branch -d</code></h5>
+                  <p class="ex-content">Ex: git branch -d [branch name]</p>
+                  <p class="card-text">This command is used to Delete a branch for github</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-23">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git branch -a</code></h5>
+                  <p class="ex-content">Ex: git branch -a</p>
+                  <p class="card-text">This command is used to List all branches (local and remote)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-24">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git branch</code></h5>
+                  <p class="ex-content">Ex: git branch [branch name]</p>
+                  <p class="card-text">This command is used to 	Create a new branch</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-25">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git checkout </code></h5>
+                  <p class="ex-content">Ex: git checkout [branch name]</p>
+                  <p class="card-text">This command is used to Switch to a branch</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-26">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git checkout -</code></h5>
+                  <p class="ex-content">Ex: git checkout -</p>
+                  <p class="card-text">This command is used to Switch to the branch last checked out</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-27">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git checkout --</code></h5>
+                  <p class="ex-content">Ex: git checkout -- [file-name.txt]</p>
+                  <p class="card-text">This command is used to Switch to Discard changes to a file</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-28">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git branch -m</code></h5>
+                  <p class="ex-content">Ex: git branch -m [old branch name] [new branch name]</p>
+                  <p class="card-text">This command for Rename a local branch</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-29">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git checkout -b</code></h5>
+                  <p class="ex-content">Ex: git checkout -b [branch name]</p>
+                  <p class="card-text">This command for Create a new branch and switch to it</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-30">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git merge</code></h5>
+                  <p class="ex-content">Ex: git merge [branch name]</p>
+                  <p class="card-text">This command for Merge a branch into the active branch</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-31">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git push origin --delete</code></h5>
+                  <p class="ex-content">Ex: git push origin --delete [branch name]</p>
+                  <p class="card-text">Command for Delete a remote branch</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-32">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git pull origin</code></h5>
+                  <p class="ex-content">Ex: git pull origin [branch name]</p>
+                  <p class="card-text">This command for Pull changes from remote repository</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-33">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git push all</code></h5>
+                  <p class="ex-content">Ex: git push --all origin</p>
+                  <p class="card-text">Pushes all branches to the remote repository</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-34">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git log --summary</code></h5>
+                  <p class="ex-content">Ex: git log --summary</p>
+                  <p class="card-text">This command is used to View changes (detailed)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-35">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git log --oneline</code></h5>
+                  <p class="ex-content">Ex: git log --oneline</p>
+                  <p class="card-text">This command is used to View changes (briefly)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-36">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git diff</code></h5>
+                  <p class="ex-content">Ex: git diff [source branch] [target branch]</p>
+                  <p class="card-text">for Preview changes before merging</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-37">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git revert commitid</code></h5>
+                  <p class="ex-content">Ex: git revert commitid</p>
+                  <p class="card-text">This command is used to Revert commit changes</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-38">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git diff filename</code></h5>
+                  <p class="ex-content">Ex: git diff --base [filename]</p>
+                  <p class="card-text">This command shows all the merge conflicts against the base file.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-39">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git tag</code></h5>
+                  <p class="ex-content">Ex:git tag 1.0.0 [commit ID]</p>
+                  <p class="card-text">This command marks a significant change-set, such as a release.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br><hr style="color: bisque;">
+        <!--body section end-->
+
+
+        <!--get in touch start-->
+        <div class="container-fluid get-in-touch" id="get_Touch"> 
+          <h1 class="get-touch">Get in Touch</h1>
+            <div class="row">
+              <div class="col-md-5 get-touch-img">
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="p-1 m-1 text-white shadow">
+                    <img src="assets/images/shahin.jpg" class="img-fluid img-hover" style="height:250px;">
+                    <h3 class="text-center p-1" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Md. Shahin Alam</h3>
+                  </div>
+              </div><hr class="mx-auto" style="color:antiquewhite; width: 50%;">
+              <div class="social-icons mb-3">
+                <a class="social-icon facebook" target="_blank" href="https://www.facebook.com/mdshaheen.alam.5891">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social-icon twitter" target="_blank" href="https://twitter.com/mshahinalam01">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social-icon github" target="_blank" href="https://github.com/shahinalam10">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a class="social-icon instagram" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+                <a class="social-icon linkdin" target="" href="https://www.linkedin.com/in/md-shahin-alam-b3a9b120b">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a> 
+            </div>
+    
+              </div>
+              <div class="col-md-7 p-0 m-0">
+                <div class="card">
+                  <div class="card-body form-body">
+                    <form  id="contactForm">
+                      <div class="row ">
+                          <div class="col-md-6 form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"required>
+                          </div>
+                          <div class="col-md-6 form-group mt-3 mt-md-0">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                          </div>
+                      </div>
+                      <div class="form-group mt-3">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                      </div>
+                      <div class="form-group mt-3">
+                          <textarea class="form-control" id="message" name="message" rows="8" placeholder="Message" required></textarea>
+                      </div>
+                      <div class="mt-5">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <button type="submit" value="submit" onclick="submitForm()" class="sendmessage btn btn-danger py-2 px-5">submit info</button>
+                              </div>
+                              <div class="col-md-3"></div>
+                              <div class="col-md-5">
+                                <div id="response"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div><br>
+
+      
+        <!-- Footer 2 - Bootstrap Brain Component -->
+  <footer class="footer">
+
+  <!-- Widgets - Bootstrap Brain Component -->
+  <section class="py-4 py-md-5 py-xl-8 border-top border-light">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <a href="#!">
+              <img src="./assets/images/logo.jpeg" alt="BootstrapBrain Logo" width="175" height="50;">
+            </a>
+            <p class="footer-logo-content"> Git is the version control system that manages the changes in code, while GitHub is a platform that hosts Git repositories and provides additional collaboration features for developers</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Important link</h4>
+            <ul class="list-unstyled important-link">
+              <li class="mb-2">
+                <a href="https://www.w3schools.com/" class="link-secondary text-decoration-none">W3 School</a>
+              </li>
+              <li class="mb-2">
+                <a href="https://stackoverflow.com/" class="link-secondary text-decoration-none">Stack overflow</a>
+              </li>
+              <li class="mb-2">
+                <a href="www.google.com" class="link-secondary text-decoration-none">Google</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">Terms of Service</a>
+              </li>
+              <li class="mb-0">
+                <a href="#!" class="link-secondary text-decoration-none">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Learn More</h4>
+            <ul class="list-unstyled learn-more">
+              <li class="mb-2">
+                <a href="index.html" class="link-secondary text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="working-directory.html" class="link-secondary text-decoration-none">Working directory</a>
+              </li>
+              <li class="mb-2">
+                <a href="stagin-area.html" class="link-secondary text-decoration-none">Staging area</a>
+              </li>
+              <li class="mb-2">
+                <a href="local-repository.html" class="link-secondary text-decoration-none">Local repository</a>
+              </li>
+              <li class="mb-0">
+                <a href="remote-repository.html" class="link-secondary text-decoration-none">Remote repository</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-4">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Our Newsletter</h4>
+            <p class="mb-4 footer-newsletter">Subscribe to our newsletter to get our news & discounts delivered to you.</p>
+            <form action="#!">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="input-group">
+                    <span class="input-group-text" id="email-newsletter-addon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                      </svg>
+                    </span>
+                    <input type="email" class="form-control" id="email-newsletter" value="" placeholder="Email Address" aria-label="email-newsletter" aria-describedby="email-newsletter-addon" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright - Bootstrap Brain Component -->
+  <div class="py-1 py-md-2 py-xl-8 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-xs-12 col-md-12 order-1 order-md-0">
+          <div class="copyright text-center footer-text">
+            &copy; 2024. All Rights Reserved.Built by <a href="#" class="link-secondary text-decoration-none"><span class="my-name-color">Shahin Alam</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+  </div>
+
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/booststrap file/js/bootstrap.js"></script>
+</html>

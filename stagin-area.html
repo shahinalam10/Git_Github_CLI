@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & Github</title>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.jpg">
+    <!--style css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="assets/booststrap file/css/bootstrap.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-color">
+    <div class="container-fluid">
+        <!--nav section start-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.jpeg" class="img-fluid rounded" alt="logo" style="height: 55px; width: 200px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav-effect" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 item-hover">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="working-directory.html">Working directory</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="stagin-area.html">Staging area</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="local-repository.html">Local repository</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="remote-repository.html">Remote repository</a>
+                  </li>
+                </ul>
+                <div class="search-container">
+                  <form action="#" method="get">
+                    <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                    <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!--nav section end-->
+        
+        <!--body section start-->
+        <div class="body-section p-4 mt-4 card-content">
+         <div class="head-title mt-4">
+          <p>Staging area git command</p>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 transition-delay">        
+            <div class="col">
+              <div class="card col-padding fade-right-9">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git add .</code></h5>
+                  <p class="ex-content">Ex: git add .</p>
+                  <p class="card-text">This command is used to add all files to staging(index)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-9">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git add filename.exte</code></h5>
+                  <p class="ex-content">Ex: git add index.php</p>
+                  <p class="card-text">This command is used to add a only one file to the staging area</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-9">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git add --a</code></h5>
+                  <p class="ex-content">Ex: git add --a</p>
+                  <p class="card-text">Add all new and changed files to the staging area.</p>
+                </div>
+              </div>
+            </div>         
+            <div class="col">
+              <div class="card col-padding fade-right-9">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git rm -r</code></h5>
+                  <p class="ex-content">Ex: git rm -r filename.exte</p>
+                  <p class="card-text">This command is used to remove a file (or folder)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-9">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git diff</code></h5>
+                  <p class="ex-content">Ex: git diff [source branch] [target branch]</p>
+                  <p class="card-text">for Preview changes before merging</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card col-padding fade-right-9">           
+                <div class="card-body">
+                  <h5 class="card-title"><code>git diff filename</code></h5>
+                  <p class="ex-content">Ex: git diff --base [filename]</p>
+                  <p class="card-text">This command shows all the merge conflicts against the base file.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br><hr style="color: bisque;">
+        <!--body section end-->
+        
+        <!-- Footer 2 - Bootstrap Brain Component -->
+  <footer class="footer">
+
+  <!-- Widgets - Bootstrap Brain Component -->
+  <section class="py-4 py-md-5 py-xl-8 border-top border-light">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <a href="#!">
+              <img src="./assets/images/logo.jpeg" alt="BootstrapBrain Logo" width="175" height="50;">
+            </a>
+            <p class="footer-logo-content"> Git is the version control system that manages the changes in code, while GitHub is a platform that hosts Git repositories and provides additional collaboration features for developers</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Important link</h4>
+            <ul class="list-unstyled important-link">
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">W3 School</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">Stack overflow</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">Google</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">Terms of Service</a>
+              </li>
+              <li class="mb-0">
+                <a href="#!" class="link-secondary text-decoration-none">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Learn More</h4>
+            <ul class="list-unstyled learn-more">
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">Working directory</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">Staging area</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none">Local repository</a>
+              </li>
+              <li class="mb-0">
+                <a href="#!" class="link-secondary text-decoration-none">Remote repository</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-4">
+          <div class="widget">
+            <h4 class="widget-title mb-4">Our Newsletter</h4>
+            <p class="mb-4 footer-newsletter">Subscribe to our newsletter to get our news & discounts delivered to you.</p>
+            <form action="#!">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="input-group">
+                    <span class="input-group-text" id="email-newsletter-addon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                      </svg>
+                    </span>
+                    <input type="email" class="form-control" id="email-newsletter" value="" placeholder="Email Address" aria-label="email-newsletter" aria-describedby="email-newsletter-addon" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright - Bootstrap Brain Component -->
+  <div class="py-1 py-md-2 py-xl-8 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-xs-12 col-md-12 order-1 order-md-0">
+          <div class="copyright text-center footer-text">
+            &copy; 2024. All Rights Reserved.Built by <a href="https://bootstrapbrain.com/" class="link-secondary text-decoration-none"><span class="my-name-color">Shahin Alam</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+  </div>
+
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/booststrap file/js/bootstrap.js"></script>
+</html>
